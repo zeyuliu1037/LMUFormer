@@ -1,0 +1,8 @@
+ignore
+*/__pycache__
+*/*/__pycache__
+src/logs
+src/*.pkl
+*.pt
+data/speech_commands/data/speech_commands_v0.02
+data/speech_commands/data/datafiles

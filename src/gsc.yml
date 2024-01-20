@@ -1,0 +1,50 @@
+### model params
+# model: lmu_rnn_conv1d
+# model: slmu_rnn_conv1d
+model: slmu_rnn_ms_conv1d
+# model: attn_ms_conv1d
+annotaiton: annotaitons for slmu_rnn_ms_conv1d
+patch_size: 16
+dim: 256
+num_heads: 16
+mlp_ratio: 4
+in_channels: 128
+layer: 1
+sr_ratios: 1
+time_step: 1
+
+gpu_id: '1'
+
+### data params
+dataset: speechcommands
+n_class: 35
+freqm: 48
+timem: 48
+mixup: 0.6
+bal: none
+noise: True
+audio_length: 128
+batch_size: 128
+dataset_mean: -6.845978
+dataset_std: 5.5654526
+data_train: ../data/speech_commands/data/datafiles/speechcommand_train_data.json
+data_val: ../data/speech_commands/data/datafiles/speechcommand_valid_data.json
+data_eval: ../data/speech_commands/data/datafiles/speechcommand_eval_data.json
+label_csv: ../data/speech_commands/data/speechcommands_class_labels_indices.csv
+
+### training params
+lr: 2.5e-3
+n_epochs: 200
+metrics: acc
+loss: BCE
+warmup: False
+
+lrscheduler_start: 10
+lrscheduler_step: 10
+lrscheduler_decay: 0.85
+exp_dir: ./logs
+save_model: True
+
+# test_only: True
+# test_mode: all_seq
+# initial_checkpoint: '.../models/best_model.pth'
