@@ -4,27 +4,40 @@
 
 
 ## Citing
-Please consider citing our paper if you find this repository useful.
 ```
-Awaiting publication on arXiv
+@article{liu2024lmuformer,
+      title={LMUFormer: Low Complexity Yet Powerful Spiking Model With Legendre Memory Units}, 
+      author={Zeyu Liu and Gourav Datta and Anni Li and Peter Anthony Beerel},
+      year={2024},
+      journal={arXiv preprint arXiv:2402.04882},
+}
 ```
 
-## Overall structure of our LMUFormer:
+Paper: [LMUFormer: Low Complexity Yet Powerful Spiking Model With Legendre Memory Units](https://arxiv.org/abs/2402.04882)
+
+## Overview
+The overall structure of our LMUFormer:
 
 <p align="center">
-  <img src="figs/overall_LMU.png" alt="figs/overall_LMU.png" height="150px"/>
+  <img src="figs/overall_LMU.png" alt="figs/overall_LMU.png" height="80px"/>
 </p>
 
-## Details of the Conv1d patch embedding module and the spiking LMU block.
+Details of the **Conv1d patch embedding** module:
 <p align="center">
   <img src="figs/convPE.png" alt="figs/convPE.png" height="300px"/>
+
+Spiking LMU block:
+<p align="center">
   <img src="figs/LMU_block.png" alt="figs/LMU_block.png" height="300px"/>
 </p>
 
-## Delay analysis of the convolutional patch embedding and the plot of test accuracy as the number of samples in the sequence increses.
-
+**Delay analysis** of the convolutional patch embedding:
 <p align="center">
   <img src="figs/delay.png" alt="figs/delay.png" height="300px"/>
+</p>
+
+Plot of **test accuracy** v.s. **number of samples in the sequence**:
+<p align="center">  
   <img src="figs/acc_seq.png" alt="figs/acc_seq.png" height="300px"/>
 </p>
 
