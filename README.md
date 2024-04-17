@@ -28,6 +28,24 @@ Awaiting publication on arXiv
   <img src="figs/acc_seq.png" alt="figs/acc_seq.png" height="300px"/>
 </p>
 
+## Main Results
+| Model                     | Sequential Inference | Parallel Training | SNN | Accuracy (%) |
+|---------------------------|----------------------|-------------------|-----|--------------|
+| RNN                   | Yes                  | No                | No  | 92.09        |
+| Attention RNN         | No                   | No                | No  | 93.9         |
+| liBRU                | Yes                  | No                | No  | 95.06        |
+| Res15                | Yes                  | Yes               | No  | 97.00        |
+| KWT2                 | No                   | Yes               | No  | 97.74        |
+| AST                   | No                   | Yes               | No  | 98.11        |
+| LIF                  | Yes                  | Yes               | Yes | 83.03        |
+| SFA                | Yes                  | No                | Yes | 91.21        |
+| Spikformer*         | No                   | Yes               | Yes | 93.38        |
+| RadLIF               | Yes                  | No                | Yes | 94.51        |
+| Spike-driven ViT*     | No                   | Yes               | Yes | 94.85        |
+| [LMUFormer](https://drive.google.com/file/d/137r69jQn3RY5naCEMMSXR77bgzGTYMkY/view?usp=sharing)                 | Yes                  | Yes               | No  | **96.53**    |
+| LMUFormer (with states)   | Yes                  | Yes               | No  | **96.92**    |
+| [Spiking LMUFormer](https://drive.google.com/file/d/1StKHvOHJdHKZAtIjewCpS2f7P3TWN1mi/view?usp=sharing)         | Yes                  | Yes               | Yes | **96.12**    |
+
 
 
 ## Directory Structure
