@@ -308,10 +308,6 @@ def validate(model, val_loader, args, epoch, device, mode='normal'):
             acc = (torch.argmax(audio_output, axis=1) == torch.argmax(labels.long(), axis=1)).sum().item() / B
             test_acc.update(acc, B)
 
-            if args.use_hook:
-                return 0,0,0
-
-
         target = torch.cat(A_targets)
         loss = np.mean(A_loss)
         if mode == 'all_seq':
