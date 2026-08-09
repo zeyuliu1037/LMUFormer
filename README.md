@@ -1,3 +1,5 @@
+
+
 # LMUFormer: Low Complexity Yet Powerful Spiking Model With Legendre Memory Units, [ICLR 2024](https://openreview.net/forum?id=oEF7qExD9F&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions))
 
 > 鹏北海，凤朝阳。又携书剑路茫茫。明年此日青云去，却笑人间举子忙。
@@ -81,8 +83,8 @@ Plot of **test accuracy** v.s. **number of samples in the sequence**:
         - 📜 `lmu_rnn.py` register 3 types of LMUFormer model and one spiking Transformer model
         - 📜 `run.py`
         - 📜 `traintest.py` 
-    - 📜 `requirements.txt` configuration for cifar10 dataset
-    - 📜 `README.md` configuration for imagenet100 dataset
+    - 📜 `requirements.txt` Python dependencies for the project
+    - 📜 `README.md` Project documentation
 
 
 ## Requirements
